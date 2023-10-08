@@ -29,20 +29,19 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Project Description
+The objective was to develop an NFT that requires continuous user engagement. The inspiration for this project stems from the concept of a Tamagotchi, where players must care for and feed their virtual pets to keep them alive. In this proof of concept, users are tasked with the responsibility of consistently nourishing their Zen Token NFT (NFT citizen) to prevent its demise.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+How it's Constructed
+This project incorporates several technological components:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Magic Connect SDK
+A fundamental Solidity contract
+React
+Once the user has authenticated via Magic, they gain the ability to interact with their NFT through the "feed" transaction. The "feed" action updates the "lastFed" parameter, which plays a crucial role in determining whether there is enough sustenance remaining for the NFT citizen's survival. The calculation is based on the equation: Food remaining = maxFood - foodConsumptionRate * timeElapsedSinceLastFed.
 
 For the purposes of this proof of concept, the contract currently references a global "lastFed" parameter. However, there are plans to promptly follow this prototype with the implementation of a genuine ERC721 contract.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
