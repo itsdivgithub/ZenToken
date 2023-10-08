@@ -121,7 +121,7 @@ function App() {
             Mint
           </button></div>) : (<div>Loading...</div>)}
           <div className="citizens-container">{renderCitizens(citizens, owned, feed, clean)}</div>
-          <div><a className="button-row" href={"https://goerli.etherscan.io/address/"+contractAddress}>See contract</a></div>
+          <div><a className="button-row" href={"https://www.encode.club/digital-identity-hackathon"}>EncodeXDitalIdentity</a></div>
           <div><button onClick={disconnect} className="wallet-button">
             Disconnect
           </button></div>
