@@ -1,4 +1,4 @@
-# Getting Started with ZenToken
+# Getting Started with ZenToken- Magic SDK
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
