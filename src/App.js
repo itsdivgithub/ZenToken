@@ -104,12 +104,13 @@ function App() {
       <div>
       {!account && (
         <button onClick={login} className="wallet-button">
-          Sign In
+          Magic Connect
         </button>
       )}
 
       <div className="headline">
-        ZenToken 2.0
+        ZenToken 2.0 by 
+        <div><a className="button-row" href={"https://github.com/itsdivgithub"}>Divyanshu Singh</a></div>
       </div>
       {account && (
         <>
